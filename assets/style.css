@@ -58,7 +58,7 @@ p{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px 0px 20px;
+    padding: 10px 20px 0 20px;
     line-height: 0px;
     background-color: #f6f6f6;
     font-family: "Shrikhand-Regular";
@@ -70,27 +70,23 @@ p{
 
 .heart_logo{
     position: absolute;
-    display:flex;
-    left: 98%;
+    left: 96%;
     transition-property:display:flex;
     transition-duration: 1000ms;
-    /* line-height: 20px; */
-    background-color: tomato;
+    background-color: #f6f6f6;
 }
 
 .heart_logo:hover{
-    display: none;
+    opacity: 0;
 }
 
 .heart_logo_full{
     position: absolute;
-    left: 98%;
+    margin-right: 20px;
+    left: 96%;
     height: ;
     z-index: -1;
 }
-
-
-
 
 .contener_menu_type{
     display: flex;
@@ -119,10 +115,54 @@ p{
     height: 60px;
     width: 320px;
     cursor: pointer;
+    transition-property: all;
+    transition-duration: 1000ms;
+    transition-timing-function: ease-in-out;
 }
 
+#starters{
+    animation: slideup 3000ms;
+}
+
+#mains{
+    animation: menuhide, slideup;
+    animation-duration: 1000ms,1000ms;
+    animation-delay:0ms,500ms;
+}
+
+#desserts{
+    animation: menuhide, slideup;
+    animation-duration: 2000ms,1000ms;
+    animation-delay:0ms,1000ms;
+}
+
+@keyframes menuhide{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 0;
+    }
+
+}
+
+@keyframes slideup {
+
+    from{
+        transform: translateY(20px);
+        opacity:0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+
+
 .dish_description{
- width:100%;
+    width: 100%; /*300px;  */
 }
 
 .dish_name{
@@ -131,22 +171,27 @@ p{
     justify-content: space-between;
     padding: 10px;
     font-family: "Roboto-Bold";
-   
 }
 
 .dish_description_and_prix{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     font-family: "Roboto-Regular";
     font-size: 0.85em;
+
 }
 
 .description{
     padding-left:10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .price{
     width: 30px;
     font-family: "Roboto-Bold";
+    /* margin-left: 50px; */
 }
 
 
@@ -166,16 +211,16 @@ p{
 
 
  .item:hover .check_price{
-    width: 50px;
+    width: 100px;
     transition-duration: 500ms;
     background-color: #99E2D0;
-    
+
 }
 
 .contener_icone_check{
 
     transition-property: rotate(180deg);
-    transition-duration: 500ms;  
+    transition-duration: 500ms;
 }
 
 .item:hover .contener_icone_check{
@@ -257,6 +302,23 @@ footer{
         justify-content: center;
         flex-wrap: wrap;
         background-color: #f6f6f6;
+    }
+
+    .heart_logo{
+        position: absolute;
+        left: 90%;
+        transition-property:display:flex;
+        transition-duration: 1000ms;
+        background-color: #f6f6f6;
+    }
+
+
+    .heart_logo_full{
+        position: absolute;
+        margin-right: 20px;
+        left: 90%;
+        height: ;
+        z-index: -1;
     }
 
 }
