@@ -127,7 +127,7 @@ p{
 .green_line{
     width: 30px;
     border-top: 3px solid #99E2D0;
-    margin-left:10px; 
+    /* margin-left:10px;  */
 }
 
 .item{
@@ -347,7 +347,7 @@ footer{
 
 .restaurent_header_contener{
 font-size: 1.1em;
-background-color: darkorange;
+/* background-color: darkorange; */
 }
 
 }
@@ -494,6 +494,9 @@ h4{
 
 img{
     border-radius:  20px 20px 0 0;
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
 }
 
 .new{
@@ -693,6 +696,7 @@ span::before{
     }
 
     .how_it_works{
+        margin-top:30px;
         margin-left:20px;
         padding:0px;
     }
