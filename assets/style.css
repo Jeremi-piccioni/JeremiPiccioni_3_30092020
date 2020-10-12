@@ -345,10 +345,15 @@ footer{
 
 @media screen and (max-width: 400px) {
 
-.restaurent_header_contener{
+/* .restaurent_header_contener{
 font-size: 1.1em;
-/* background-color: darkorange; */
-}
+background-color: darkorange;
+} */
+
+.restaurent_header_contener{
+    font-size: 0.87em;
+    /* background-color: darkorange; */
+    }
 
 }
 
