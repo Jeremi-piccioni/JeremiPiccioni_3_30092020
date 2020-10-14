@@ -243,7 +243,6 @@ p{
 }
 
 .contener_icone_check{
-    transition-property: rotate(180deg);
     transition-duration: 500ms;
 }
 
@@ -618,7 +617,6 @@ font-family:Roboto-Regular;
     left:0px;
     height: 100%;
     width: 100%;
-    border: 3 solid  #99E2D0;
     border-top: 5px solid #99E2D0;
     border-left: 5px solid #99E2D0;
     border-radius: 50%;
